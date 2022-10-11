@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homeline"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="sans-serif-black"
+            android:text="Instructions"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            tools:ignore="TextContrastCheck" />
+
+        <RelativeLayout
+            android:id="@+id/layoutcard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_background">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:background="#3d93d9">
+
+                        <ImageView
+
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+
+                            android:src="@drawable/warning"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <TextView
+                            android:layout_width="@dimen/_290sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_60sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:text="please review eligibility requirements before applying application fee once paid will not be refunded"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            tools:ignore="TextContrastCheck" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/_290sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="General Instructions:"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/_16sdp"
+                        tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="1. Provisional Admissions (Result awaiting): The students admitted on provisional basis  in BS / BBA (Hons) Programs are required to provide result card within 7 days of commencement of the classes otherwise, their admission will be cancelled without further notice / refund. No provisional admissions will be entertained in MS/MPhil/PhD, MBA, BBA (2 Years)BS Bridging and Functional programs."
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_16sdp"
+                        tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="2. Fee Refund Policy: 100% fee refund if claimed (only in writing) within 1st week, 50% within 2nd week, no refund after fifteen (15) days of commencement of semester. However, the students on provisional admission (For result awaited only) failing to obtain the required percentage as per eligibility criteria advertised will be refunded 100% of fee if they claim for refund (only in writing) within 7 days of declaration/announcement of the result by the concerned board/university."
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_16sdp"
+                        tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="3. Cancellation of Admission: The applicants are advised to confirm eligibility before online processing of admission form. Admission will be cancelled without any refund (Except security fee) at any stage if a candidate/student is found ineligible as per advertisement OR any degree / certificate proves to be fake / unrecognized."
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_16sdp"
+                        tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="4. Schedule of GAT / Entrance Test and Interviews etc: Exact date &amp; time for entrance test will be intimated through the Admit Card.  Calendar of Events / Instructions for admission will be displayed on NUML website. Exact Date &amp; Time will also be intimated through Admit Card on student admission postal."
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_16sdp"
+                        tools:ignore="TextContrastCheck" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnNext"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_margin="@dimen/_30sdp"
+                        android:background="@drawable/shape_button"
+                        android:text="Start"
+                        android:textColor="@color/white"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

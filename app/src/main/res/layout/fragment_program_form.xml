@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homeline"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginStart="@dimen/_20sdp"
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Program Form"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/backward"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:id="@+id/layoutcard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_background">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_30sdp"
+                tools:ignore="UselessParent">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/line1"
+                    android:paddingBottom="@dimen/_100sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="wrap_content"
+                        android:background="#3d93d9"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:src="@drawable/warning"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <TextView
+                            android:layout_width="@dimen/_290sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_60sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:text="Maximam priorities can be different based on degree section"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            tools:ignore="TextContrastCheck" />
+                    </RelativeLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                        <TextView
+                            android:id="@+id/textView34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Campus:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_20ssp"
+                            app:layout_constraintStart_toStartOf="@+id/edCampus"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                            android:id="@+id/edCampus"
+                            android:layout_width="@dimen/_260sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:background="@drawable/edit_background"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/materialTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Select Faculty:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_20ssp"
+                            app:layout_constraintStart_toStartOf="@+id/edCampus"
+                            app:layout_constraintTop_toBottomOf="@+id/edCampus" />
+
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                            android:id="@+id/edFaculty"
+                            android:layout_width="@dimen/_260sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:background="@drawable/edit_background"
+                            app:layout_constraintEnd_toEndOf="@+id/edCampus"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/edCampus"
+                            app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/materialTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Select Degree:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_20ssp"
+                            app:layout_constraintStart_toStartOf="@+id/edFaculty"
+                            app:layout_constraintTop_toBottomOf="@+id/edFaculty" />
+
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                            android:id="@+id/edDegree"
+                            android:layout_width="@dimen/_260sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:background="@drawable/edit_background"
+                            app:layout_constraintEnd_toEndOf="@+id/edFaculty"
+                            app:layout_constraintStart_toStartOf="@+id/edFaculty"
+                            app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/materialTextView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Select Shift:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_20ssp"
+                            app:layout_constraintStart_toStartOf="@+id/edDegree"
+                            app:layout_constraintTop_toBottomOf="@+id/edDegree" />
+
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                            android:id="@+id/edShift"
+                            android:layout_width="@dimen/_260sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:background="@drawable/edit_background"
+                            app:layout_constraintEnd_toEndOf="@+id/edDegree"
+                            app:layout_constraintStart_toStartOf="@+id/edDegree"
+                            app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/materialTextView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Second Priority(Optional):"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_20ssp"
+                            app:layout_constraintEnd_toEndOf="@+id/edShift"
+                            app:layout_constraintStart_toStartOf="@+id/edShift"
+                            app:layout_constraintTop_toBottomOf="@+id/edShift" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/materialTextView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Degree"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_20ssp"
+                            app:layout_constraintStart_toStartOf="@+id/edShift"
+                            app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
+
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                            android:id="@+id/edProgramSec"
+                            android:layout_width="@dimen/_260sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/edit_background"
+                            app:layout_constraintEnd_toEndOf="@+id/edShift"
+                            app:layout_constraintStart_toStartOf="@+id/edShift"
+                            app:layout_constraintTop_toBottomOf="@+id/materialTextView5" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/materialTextView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Shift"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_20ssp"
+                            app:layout_constraintStart_toStartOf="@+id/edProgramSec"
+                            app:layout_constraintTop_toBottomOf="@+id/edProgramSec" />
+
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                            android:id="@+id/edShiftSec"
+                            android:layout_width="@dimen/_260sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:background="@drawable/edit_background"
+                            app:layout_constraintStart_toStartOf="@+id/edProgramSec"
+                            app:layout_constraintTop_toBottomOf="@+id/materialTextView6" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnNext"
+                            android:layout_width="@dimen/_260sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:background="@drawable/shape_button"
+                            android:text="submit"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:textColor="@color/white"
+                            app:layout_constraintEnd_toEndOf="@+id/edShift"
+                            app:layout_constraintStart_toStartOf="@+id/edShift"
+                            app:layout_constraintTop_toBottomOf="@+id/edShiftSec" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <include
+            android:id="@+id/baseLine"
+            layout="@layout/bottomcomponent"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

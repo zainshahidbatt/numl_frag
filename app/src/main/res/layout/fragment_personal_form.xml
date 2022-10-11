@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeline"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:fontFamily="sans-serif-black"
+                android:text="Personal Information"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/backward"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutcard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_background">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_marginBottom="0dp"
+                tools:ignore="UselessParent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/line1"
+                    android:paddingBottom="@dimen/_100sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/profilePic"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:contentDescription="todo"
+                        android:src="@drawable/profile"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/openBtn"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/selectbutton"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:text="select"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/profilePic"
+                        app:layout_constraintStart_toStartOf="@+id/profilePic"
+                        app:layout_constraintTop_toBottomOf="@+id/profilePic"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck" />
+
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Full Name:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/fullName"
+                        app:layout_constraintTop_toBottomOf="@+id/openBtn" />
+
+                    <EditText
+                        android:id="@+id/fullName"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="your Name"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_30sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView10"
+                        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Cinc/Form B"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/fullName"
+                        app:layout_constraintTop_toBottomOf="@+id/fullName" />
+
+                    <EditText
+                        android:id="@+id/cincNumber"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="3640012345678"
+                        android:inputType="number"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_30sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/fullName"
+                        app:layout_constraintStart_toStartOf="@+id/fullName"
+                        app:layout_constraintTop_toBottomOf="@+id/textView8"
+                        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck,TextFields" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Date of Birth"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/cincNumber"
+                        app:layout_constraintTop_toBottomOf="@+id/cincNumber" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="@+id/cincNumber"
+                        app:layout_constraintStart_toStartOf="@+id/cincNumber"
+                        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                        <EditText
+                            android:id="@+id/dob"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_personal_background"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:paddingStart="@dimen/_30sdp"
+                            android:paddingEnd="@dimen/_30sdp"
+                            android:text="dd/mm/yyyy"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/_18sdp"
+                            tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_date"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:background="@drawable/shape_button"
+                            android:drawableStart="@drawable/calendar"
+                            android:paddingStart="@dimen/_30sdp"
+                            android:paddingEnd="@dimen/_20sdp"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Gender"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editGender"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="Male/Female"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Blood Group"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/editGender"
+                        app:layout_constraintTop_toBottomOf="@+id/editGender" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editBlood"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="A+"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/editGender"
+                        app:layout_constraintStart_toStartOf="@+id/textView13"
+                        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Relationship Status"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/editBlood"
+                        app:layout_constraintTop_toBottomOf="@+id/editBlood" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editRelation"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="Single/Married"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/editBlood"
+                        app:layout_constraintStart_toStartOf="@+id/editBlood"
+                        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Cell Number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/editRelation"
+                        app:layout_constraintTop_toBottomOf="@+id/editRelation" />
+
+                    <EditText
+                        android:id="@+id/cellNumber"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="03001234567"
+                        android:importantForAutofill="no"
+                        android:inputType="phone"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_30sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/editRelation"
+                        app:layout_constraintStart_toStartOf="@+id/editRelation"
+                        app:layout_constraintTop_toBottomOf="@+id/textView14"
+                        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck,TextFields" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Residence Number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/cellNumber"
+                        app:layout_constraintTop_toBottomOf="@+id/cellNumber" />
+
+                    <EditText
+                        android:id="@+id/residenceNumber"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="03001234567"
+                        android:importantForAutofill="no"
+                        android:inputType="phone"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_30sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/cellNumber"
+                        app:layout_constraintStart_toStartOf="@+id/textView15"
+                        app:layout_constraintTop_toBottomOf="@+id/textView15"
+                        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck,TextFields" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Nationality"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/residenceNumber"
+                        app:layout_constraintTop_toBottomOf="@+id/residenceNumber" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editNationality"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="Pakistan"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/residenceNumber"
+                        app:layout_constraintStart_toStartOf="@+id/residenceNumber"
+                        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Country"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/editNationality"
+                        app:layout_constraintTop_toBottomOf="@+id/editNationality" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editCountry"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="Pakistan"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/editNationality"
+                        app:layout_constraintStart_toStartOf="@+id/editNationality"
+                        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Province"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/editCountry"
+                        app:layout_constraintTop_toBottomOf="@+id/editCountry" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editProvince"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="Sindh"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/editCountry"
+                        app:layout_constraintStart_toStartOf="@+id/editCountry"
+                        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="District"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/editProvince"
+                        app:layout_constraintTop_toBottomOf="@+id/editProvince" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editDist"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="Lahore"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/editProvince"
+                        app:layout_constraintStart_toStartOf="@+id/editProvince"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Tehsil"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/editDist"
+                        app:layout_constraintTop_toBottomOf="@+id/editDist" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editTehsil"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="Multan"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/editDist"
+                        app:layout_constraintStart_toStartOf="@+id/editDist"
+                        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Domicel"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/editTehsil"
+                        app:layout_constraintTop_toBottomOf="@+id/editTehsil" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editDomicel"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="Multan"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/editTehsil"
+                        app:layout_constraintStart_toStartOf="@+id/editTehsil"
+                        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Present Address"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/editDomicel"
+                        app:layout_constraintTop_toBottomOf="@+id/editDomicel" />
+
+                    <EditText
+                        android:id="@+id/presentAddress"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="5"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="Complete Address"
+                        android:importantForAutofill="no"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_30sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/editDomicel"
+                        app:layout_constraintStart_toStartOf="@+id/editDomicel"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6"
+                        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Permanent Address"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/presentAddress"
+                        app:layout_constraintTop_toBottomOf="@+id/presentAddress" />
+
+                    <EditText
+                        android:id="@+id/permanentAddress"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="5"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="Complete Address"
+                        android:importantForAutofill="no"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_30sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/presentAddress"
+                        app:layout_constraintStart_toStartOf="@+id/presentAddress"
+                        app:layout_constraintTop_toBottomOf="@+id/textView21"
+                        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Father Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/permanentAddress"
+                        app:layout_constraintTop_toBottomOf="@+id/permanentAddress" />
+
+                    <EditText
+                        android:id="@+id/fatherName"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="Full Name"
+                        android:importantForAutofill="no"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_30sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/permanentAddress"
+                        app:layout_constraintStart_toStartOf="@+id/permanentAddress"
+                        app:layout_constraintTop_toBottomOf="@+id/textView24"
+                        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Annual Income of Father/Gaurdian"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/fatherName"
+                        app:layout_constraintTop_toBottomOf="@+id/fatherName" />
+
+                    <EditText
+
+                        android:id="@+id/annualIncome"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="in numbers"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_30sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/fatherName"
+                        app:layout_constraintStart_toStartOf="@+id/fatherName"
+                        app:layout_constraintTop_toBottomOf="@+id/textView26"
+                        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Profession job title gaurdian/father"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/annualIncome"
+                        app:layout_constraintTop_toBottomOf="@+id/annualIncome" />
+
+                    <EditText
+                        android:id="@+id/jobTitle"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="job Own Buissness"
+                        android:importantForAutofill="no"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_30sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/annualIncome"
+                        app:layout_constraintStart_toStartOf="@+id/annualIncome"
+                        app:layout_constraintTop_toBottomOf="@+id/textView25"
+                        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="First person in family to attend university"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/jobTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/jobTitle" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editFirst"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="Yes/No"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/jobTitle"
+                        app:layout_constraintStart_toStartOf="@+id/textView9"
+                        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="any chronice Disease"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/editFirst"
+                        app:layout_constraintTop_toBottomOf="@+id/editFirst" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editDisease"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="yes/No"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/editFirst"
+                        app:layout_constraintStart_toStartOf="@+id/editFirst"
+                        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:text="describe disease if yes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="@+id/editDisease"
+                        app:layout_constraintTop_toBottomOf="@+id/editDisease" />
+
+                    <EditText
+                        android:id="@+id/diseaseYes"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_personal_background"
+                        android:hint="any Disease"
+                        android:importantForAutofill="no"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_30sdp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/editDisease"
+                        app:layout_constraintStart_toStartOf="@+id/editDisease"
+                        app:layout_constraintTop_toBottomOf="@+id/textView17"
+                        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnNext"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:background="@drawable/shape_button"
+                        android:text="Next"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="@+id/diseaseYes"
+                        app:layout_constraintStart_toStartOf="@+id/diseaseYes"
+                        app:layout_constraintTop_toBottomOf="@+id/diseaseYes"
+                        tools:ignore="TextContrastCheck" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include
+            android:id="@+id/baseLine"
+            layout="@layout/bottomcomponent" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

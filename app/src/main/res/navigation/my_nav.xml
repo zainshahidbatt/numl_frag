@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/dashBoardFragment">
+
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.example.numl_frag.ui.dashboard.DashBoardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board">
+        <action
+            android:id="@+id/action_dashBoardFragment_to_fragmentApplyDashboard"
+            app:destination="@id/fragmentApplyDashboard" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_admissionCriteriaFragment"
+            app:destination="@id/admissionCriteriaFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_admitCardFragment"
+            app:destination="@id/admitCardFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_feeStuctureFragment"
+            app:destination="@id/feeStuctureFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_importantDateFragment"
+            app:destination="@id/importantDateFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_offeredProgramsFragment"
+            app:destination="@id/offeredProgramsFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_meritListFragment"
+            app:destination="@id/meritListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentApplyDashboard"
+        android:name="com.example.numl_frag.ui.apply.ApplyDashboardFragment"
+        android:label="fragment_apply_dashboard"
+        tools:layout="@layout/fragment_apply_dashboard">
+        <action
+            android:id="@+id/action_fragmentApplyDashboard_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionFragment"
+        android:name="com.example.numl_frag.ui.apply.admissionform.InstructionFragment"
+        android:label="fragment_instruction"
+        tools:layout="@layout/fragment_instruction">
+        <action
+            android:id="@+id/action_instructionFragment_to_programFormFragment"
+            app:destination="@id/programFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/programFormFragment"
+        android:name="com.example.numl_frag.ui.apply.admissionform.programform.ProgramFormFragment"
+        android:label="fragment_program_form"
+        tools:layout="@layout/fragment_program_form">
+        <action
+            android:id="@+id/action_programFormFragment_to_personalFormFragment"
+            app:destination="@id/personalFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalFormFragment"
+        android:name="com.example.numl_frag.ui.apply.admissionform.personalform.PersonalFormFragment"
+        android:label="fragment_personal_form"
+        tools:layout="@layout/fragment_personal_form" >
+        <action
+            android:id="@+id/action_personalFormFragment_to_acadmaicDashboardFragment"
+            app:destination="@id/acadmaicDashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/acadmaicDashboardFragment"
+        android:name="com.example.numl_frag.ui.apply.admissionform.acadamiaform.MacadamiaDashboardFragment"
+        android:label="fragment_acadmaic_dashboard"
+        tools:layout="@layout/fragment_acadmaic_dashboard" >
+        <action
+            android:id="@+id/action_acadmaicDashboardFragment_to_addRecordFragment"
+            app:destination="@id/addRecordFragment" />
+        <action
+            android:id="@+id/action_acadmaicDashboardFragment_to_uploadDocFragment"
+            app:destination="@id/uploadDocFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRecordFragment"
+        android:name="com.example.numl_frag.ui.apply.admissionform.acadamiaform.acadamic_record.AddRecordFragment"
+        android:label="fragment_add_record"
+        tools:layout="@layout/fragment_add_record" >
+        <action
+            android:id="@+id/action_addRecordFragment_to_acadmaicDashboardFragment"
+            app:destination="@id/acadmaicDashboardFragment" />
+        <action
+            android:id="@+id/action_addRecordFragment_to_downloadChallanFragment"
+            app:destination="@id/downloadChallanFragment" />
+        <argument
+            android:name="resultType"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadDocFragment"
+        android:name="com.example.numl_frag.ui.apply.admissionform.upload_documents.UploadDocFragment"
+        android:label="fragment_upload_doc"
+        tools:layout="@layout/fragment_upload_doc" />
+    <fragment
+        android:id="@+id/admissionCriteriaFragment"
+        android:name="com.example.numl_frag.ui.admissioncriteria.AdmissionCriteriaFragment"
+        android:label="fragment_admission_criteria"
+        tools:layout="@layout/fragment_admission_criteria" >
+        <action
+            android:id="@+id/action_admissionCriteriaFragment_to_criteriaResultFragment"
+            app:destination="@id/criteriaResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/criteriaResultFragment"
+        android:name="com.example.numl_frag.ui.admissioncriteria.criteriaresult.CriteriaResultFragment"
+        android:label="fragment_criteria_result"
+        tools:layout="@layout/fragment_criteria_result" />
+    <fragment
+        android:id="@+id/admitCardFragment"
+        android:name="com.example.numl_frag.ui.admitcard.AdmitCardFragment"
+        android:label="fragment_admit_card"
+        tools:layout="@layout/fragment_admit_card" />
+    <fragment
+        android:id="@+id/feeStuctureFragment"
+        android:name="com.example.numl_frag.ui.feestucture.FeeStuctureFragment"
+        android:label="fragment_fee_stucture"
+        tools:layout="@layout/fragment_fee_stucture" />
+    <fragment
+        android:id="@+id/importantDateFragment"
+        android:name="com.example.numl_frag.ui.itimetable.importantdates.ImportantDateFragment"
+        android:label="fragment_important_date"
+        tools:layout="@layout/fragment_important_date" >
+        <action
+            android:id="@+id/action_importantDateFragment_to_acadamicCalanderFragment"
+            app:destination="@id/acadamicCalanderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/acadamicCalanderFragment"
+        android:name="com.example.numl_frag.ui.itimetable.acadmiacalander.AcadamicCalanderFragment"
+        android:label="fragment_acadamic_calander"
+        tools:layout="@layout/fragment_acadamic_calander" />
+    <fragment
+        android:id="@+id/offeredProgramsFragment"
+        android:name="com.example.numl_frag.ui.offeredprograms.programs_dashboard.OfferedProgramsFragment"
+        android:label="fragment_offered_programs"
+        tools:layout="@layout/fragment_offered_programs" >
+        <action
+            android:id="@+id/action_offeredProgramsFragment_to_nextProgramFragmet"
+            app:destination="@id/nextProgramFragmet" />
+    </fragment>
+    <fragment
+        android:id="@+id/nextProgramFragmet"
+        android:name="com.example.numl_frag.nextProgramFragmet"
+        android:label="fragment_next_program_fragmet"
+        tools:layout="@layout/fragment_next_program_fragmet" />
+    <fragment
+        android:id="@+id/meritListFragment"
+        android:name="com.example.numl_frag.ui.meritlist.MeritListFragment"
+        android:label="fragment_merit_list"
+        tools:layout="@layout/fragment_merit_list" />
+    <fragment
+        android:id="@+id/downloadChallanFragment"
+        android:name="com.example.numl_frag.ui.apply.admissionform.downloadchallan.DownloadChallanFragment"
+        android:label="fragment_download_challan"
+        tools:layout="@layout/fragment_download_challan" >
+        <action
+            android:id="@+id/action_downloadChallanFragment_to_uploadChallanFragment2"
+            app:destination="@id/uploadChallanFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadChallanFragment2"
+        android:name="com.example.numl_frag.ui.apply.admissionform.uploadchallan.UploadChallanFragment"
+        android:label="fragment_upload_challan"
+        tools:layout="@layout/fragment_upload_challan" >
+        <action
+            android:id="@+id/action_uploadChallanFragment2_to_submitionFragment"
+            app:destination="@id/submitionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/submitionFragment"
+        android:name="com.example.numl_frag.ui.apply.admissionform.submitapplication.SubmitionFragment"
+        android:label="fragment_submition"
+        tools:layout="@layout/fragment_submition" />
+</navigation>

@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">numl_frag</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date">Date:</string>
+
+
+    <!--  Programs Form and Admission Criteria Arrays  -->
+<!--    CAMPUS-->
+    <array name="Campus">
+        <item>Main</item>
+        <item>Gawadar</item>
+        <item>Lahore</item>
+        <item>Faisalabad</item>
+        <item>Multan</item>
+        <item>Hyderabad</item>
+        <item>Quetta</item>
+        <item>Peshawar</item>
+        <item>Karachi</item>
+        <item>Rawalpindi</item>
+    </array>
+
+    <!--    lahore faculties-->
+    <array name="lahore_faculties">
+        <item>Faculty of Social Science</item>
+        <item>Faculty of Engineering &amp; Computer Science</item>
+        <item>Faculty of Management Science</item>
+        <item>Faculty of Arts and Humanity</item>
+        <item>Faculty of Languages</item>
+    </array>
+    <!--    lahore faculty of social science-->
+    <array name="lhr_managSci">
+        <item>Management Science</item>
+    </array>
+    <!--    lahore management sciences departments-->
+    <array name="lhr_managSci_managSci">
+        <item>BBA(HONS)</item>
+        <item>BS ACCOUNTING AND FINANCE</item>
+        <item>MBA EXECUTIVE</item>
+        <item>MBA (WITH NON-DIVISION EDUCATION)</item>
+        <item>MBA (WITH BUSINESS EDUCATION)</item>
+        <item>BBA (TWO YEAR)</item>
+    </array>
+
+    <!--    lhr faculty of arts and humanity-->
+    <array name="lhr_art_hum">
+        <item>English (UGS)</item>
+    </array>
+
+    <!--    lhr faculty of arts and humanity Departments-->
+    <array name="lhr_art_hum_eng">
+        <item>BS ENGLISH</item>
+        <item>BS ENGLISH (BRIDGING)</item>
+    </array>
+
+    <!--    lhr faculty of LANGUAGES-->
+    <array name="lhr_lang">
+        <item>ENGLISH LELT</item>
+        <item>FOREIGN LANGUAGES</item>
+        <item>LANGUAGE COURSES</item>
+    </array>
+
+    <!--    lhr lang english lelt-->
+    <array name="lhr_lang_englet">
+        <item>ENGLISH LEVEL A1</item>
+        <item>ENGLISH LEVEL B2</item>
+        <item>ENGLISH SPELLING PROFICIENCY</item>
+        <item>ENGLISH SHOR COURSE 8 WEEKS</item>
+        <item>ILETS</item>
+
+    </array>
+
+    <!--    lhr foreign languages-->
+    <array name="lhr_lang_foreign">
+        <item>CERTIFICATE IN CHINES LANGUAGES</item>
+        <item>CERTIFICATE IN GERMAN LANGUAGE</item>
+        <item>CERTIFICATE IN KOREAN LANGUAGE</item>
+        <item>CERTIFICATE IN JAPANESE LANGUAGE</item>
+    </array>
+    <!--    lhr lang course-->
+    <array name="lhr_lang_course">
+        <item>CHINESE 8 WEEKS</item>
+        <item>GERMAN 8 WEEKS</item>
+        <item>KOREAN 8 WEEKS</item>
+    </array>
+    <!--    LHR SOCIAL SCIENCE-->
+    <array name="lhr_social_sci">
+        <item>MEDIA AND COMMUNICATION</item>
+        <item>PSYCHOLOGY</item>
+    </array>
+    <array name="lhr_social_media">
+        <item>BS MASS COMMUNICATION</item>
+        <item>BS MASS COMMUNICATION BRIDGING</item>
+    </array>
+    <array name="lhr_social_psych">
+        <item>BS PSYCHOLOGY</item>
+    </array>
+
+
+<!--Gawadar faculties-->
+    <array name="gawadar_faculties">
+        <item>FACULTY OF ARTS AND HUMANITIES</item>
+        <item>FACULTY OF LANGUAGES</item>
+        <item>FACULTY OF ARABIC</item>
+        <item>FACULTY OF BALOCHI</item>
+        <item>FACULTY OF CHINESE</item>
+    </array>
+<!--    MAIN CAMPUS FACULTIES-->
+    <array name="main_faculties">
+        <item>Faculty of Social Science</item>
+        <item>Faculty of Engineering &amp; Computer Science</item>
+        <item>Faculty of Management Science</item>
+        <item>Faculty of Arts and Humanity</item>
+        <item>Faculty of Languages</item>
+        <item>Confusius Institutes </item>
+    </array>
+</resources>
