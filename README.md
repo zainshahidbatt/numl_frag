@@ -6,3 +6,6 @@ Hilt
 Database
 MYSQL
 Refined UI
+Also add CameraX intigration so that user can click or scan his documents and upload it.
+Also add Chatbot using brainshop.ai api 
+Make User experince as simple as it can be
